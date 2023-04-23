@@ -1,0 +1,43 @@
+﻿<Frame xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="SuperheroQuiz.QuestionCard"
+       Padding="20"
+       BackgroundColor="White"
+       CornerRadius="10"
+       HasShadow="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       WidthRequest="300"
+       HeightRequest="200">
+    <StackLayout Orientation="Vertical">
+        <Label x:Name="TitleLabel"
+       Text="{Binding Title}"
+       FontSize="Large"
+       TextColor="Black"
+       HorizontalOptions="Center"
+       VerticalOptions="Center" />
+
+        <Grid
+            VerticalOptions="EndAndExpand"
+            >
+            <Label
+               Grid.Column="0"
+               Text="{Binding No}"
+               FontSize="Medium"
+               TextColor="Black"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="End"
+
+                        />
+            <Label Grid.Column="1"
+                   HorizontalTextAlignment="End"
+                VerticalTextAlignment="End"
+               Text="{Binding Yes}"
+               FontSize="Medium"
+               TextColor="Black" />
+
+        </Grid>
+       
+    </StackLayout>
+    
+</Frame>

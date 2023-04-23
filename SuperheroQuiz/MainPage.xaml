@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:SuperheroQuiz"
+             x:Class="SuperheroQuiz.MainPage">
+    <Grid>
+        <Image x:Name="ResultImage" 
+               Aspect="AspectFill"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand" />
+        <Image x:Name="CoverImage" 
+               Aspect="AspectFill"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               
+               />
+        <AbsoluteLayout x:Name="CardLayout">
+        </AbsoluteLayout>
+        <Button x:Name="ResetButton" Opacity="0" Text="Reset" Clicked="ResetButton_Clicked" VerticalOptions="End" HorizontalOptions="End" Margin="20"/> 
+        <Label x:Name="ResultLabel" Opacity="0" FontSize="Large" HorizontalOptions="Center" TextColor="Wheat"/>
+        </Grid>
+</ContentPage>
