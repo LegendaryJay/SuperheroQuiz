@@ -98,13 +98,6 @@ namespace SuperheroQuiz
 
 
             question.Evaluate(isYes);
-
-            ResultLabel.IsVisible = true;
-            var heroes = viewModel.GetHeroes().ToArray();
-            var heroNames = heroes.Select(x => x.Name + " " + x.Score);
-            var heroNamesString = string.Join("\n", heroNames);
-            ResultLabel.Text = heroNamesString;
-
             _currentQuestionIndex++;
             if (_currentQuestionIndex == viewModel.Questions.Count)
             {
